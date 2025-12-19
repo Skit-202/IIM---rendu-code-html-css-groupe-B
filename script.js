@@ -1,7 +1,9 @@
+// le dark mode
+
 let bouttonElement = document.getElementById("Switch")
 let fond = document.body
 
-bouttonElement.addEventListener("click", ()=> {
+bouttonElement.addEventListener("click", function () {
     fond.classList.toggle("darkMode")
     fond.classList.toggle("lightMode")
 
@@ -12,3 +14,12 @@ bouttonElement.addEventListener("click", ()=> {
 }
 })
 
+// simulateur de combat
+
+function precision(personnage) {
+    return Math.random() < personnage.precision
+}
+
+function attaquer(attaquant, defenseur) {
+    
+}
